@@ -2,17 +2,15 @@
   "name": "proyek-tailwind",
   "version": "1.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
     "build:css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/output.css --minify",
     "watch:css": "npx tailwindcss -i ./src/styles/tailwind.css -o ./dist/output.css --watch"
   },
   "dependencies": {
     "aos": "^2.3.4",
     "jquery": "^3.7.1",
-    "tailwindcss": "^3.4.6",
-    "vue": "^3.5.12"
+    "tailwindcss": "^3.4.6"
   },
   "devDependencies": {
-    "@vue/cli-service": "^3.3.1"
+    
   }
 }

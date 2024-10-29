@@ -10,11 +10,23 @@
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        .wstrktxt{
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+        }
+        body{
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body class="flex flex-col">
-    <header class="block bg-white top-0 inset-x-0 z-50 border-0.5 border-black shadow-lg">
+
+    
+    <header class="block bg-white top-0 inset-x-0 z-10 border-0.5 border-black shadow-lg">
         <nav class="flex items-center justify-between p-4 lg:px-8" aria-label="Global">
             <div class="flex lg:flex-1">
                 <a href="#" class="-m-1.5 p-1.5">
@@ -24,7 +36,7 @@
             <div class="hidden md:hidden lg:flex gap-x-4 items-center sm:hidden">
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">About</a>
                 <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">Contact</a>
-                <a href="#" class="text-sm font-semibold border-2 border-white bg-black leading-6 text-white dark:text-gray-200 p-1.5 px-3 rounded-lg hover:underline hover:bg-white hover:text-black hover:border-black transition-all text-center">Project <span aria-hidden="true">&rarr;</span></a>
+                <a href="#recent-project" class="text-sm font-semibold border-2 border-white bg-black leading-6 text-white dark:text-gray-200 p-1.5 px-3 rounded-lg hover:underline hover:bg-white hover:text-black hover:border-black transition-all text-center">Project <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div id="buttonMenu" class="flex lg:hidden">
                 <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300" aria-label="Open main menu">
@@ -37,34 +49,48 @@
         </nav>
     </header>
 
+
+    
+    
+    
+    
+    
     <main class="bg-[#ffffff] flex-grow overflow-hidden">
+
+        
         <div class="flex flex-col items-center h-screen">
             <p class="text-center mt-10 mb-5 w-full p-2">Hi, my name is Rizky Maulana. I'm a freelance.</p>
-            <div class="flex flex-col">
-                <h1 class="text-[48px] lg:text-[100px] md:text-[75px] sm:text-[55px] font-black text-center" data-aos="fade-right" data-aos-delay="250">WEB DEVELOPER</h1>
-                <h1 class="text-[48px] stroktext lg:text-[100px] md:text-[75px] sm:text-[55px] font-black relative text-transparent stroke-2 stroke-red-600 text-center" data-aos="fade-left">
-                    & GAME DEVELOPER
-                </h1>
+            <div class="flex flex-col w-screen">
+                <div class="flex flex-column justify-center gap-6">
+                <h1 class="text-[48px] lg:text-[100px] md:text-[75px] sm:text-[55px] font-black text-center" data-aos="fade-up" data-aos-delay="250">WEB</h1>
+                <h1 class="text-[48px] lg:text-[100px] md:text-[75px] sm:text-[55px] font-black text-center" data-aos="fade-up" data-aos-delay="500">DEVELOPER</h1>
+                </div>
+                <div class="flex flex-column justify-center gap-6">
+                    <h1 class="text-[48px] stroktext lg:text-[100px] md:text-[75px] sm:text-[55px] font-black relative text-transparent stroke-2 stroke-red-600 text-center" data-aos="fade-up" data-aos-delay="750">GAME</h1>
+                    <h1 class="text-[48px] stroktext lg:text-[100px] md:text-[75px] sm:text-[55px] font-black relative text-transparent stroke-2 stroke-red-600 text-center" data-aos="fade-up" data-aos-delay="1000">DEVELOPER</h1>
+                </div>
             </div>
             <div class="text-center flex gap-20 mt-10">
                 <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-black rounded-lg text-black bg-transparent hover:bg-black hover:text-white transition duration-300" data-aos="fade-up">You Need A WEB Dev</a>
                 <a href="#" class="text-center inline-flex justify-center items-center" data-aos="fade-down" data-aos-delay="250">What you need?</a>
                 <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-transparent rounded-lg text-white bg-black hover:bg-transparent hover:text-black hover:border-black transition duration-300" data-aos="fade-up">You Need A GAME Dev</a>
             </div>
+            
         </div>
 
         <div class="flex h-screen bg-white">
             <div class="bg-black w-1/2 flex items-center justify-center">
                 <div class="overflow-hidden w-1/2 h-1/2 rounded-lg" data-aos="fade-up" data-aos-delay="150">
-                    <img src="src/images/icon/gura.jpeg" alt="anonym" class="w-full h-full object-cover transition-transform duration-250 ease-in-out hover:scale-110">
+                    <img src="src/images/project/profile.jpg" alt="Profile" class="w-full h-full object-cover transition-transform duration-250 ease-in-out hover:scale-110">
                 </div>
             </div>
+            
             <div class="bg-black w-1/2 p-6 flex justify-center flex-col">
                 <div class="relative mb-20">
                     <h1 class="wstrktxt text-white opacity-50 absolute font-black text-5xl left-6 top-6" data-aos="fade-up" data-aos-delay="150">About Me.</h1>
                     <h1 class="absolute text-white font-black text-5xl left-4 top-4" data-aos="fade-up">About Me.</h1>
                 </div>
-                <p class="text-white" data-aos="fade-up" data-aos-delay="150">Hanya seorang anak muda yang ingin menguasai dunia</p>
+                <p class="text-white" data-aos="fade-up" data-aos-delay="150">Seorang yang ingin menjadi Game Dev</p>
                 <div>
                     <table class="w-full">
                         <tbody>
@@ -87,33 +113,66 @@
                         </tbody>
                     </table>
                     <div class="flex flex-rows gap-10 mt-10">
-                        <a href="#" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">My Skills</a>
-                        <a href="#" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">Soft Skills</a>
+                        <button id="showSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">My Skills</button>
+                        <button id="showSoftSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">Soft Skills</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white flex flex-col h-screen">
-            <div class=" flex">
+        
+
+        <div id="recent-project" class="bg-white flex flex-col h-screen">
+            <div class="flex m-auto">
                 <h1 class="text-black font-bold text-6xl">Recent Project : </h1>
             </div>
-            <div class="flex h-[75%] w-screen bg-slate-200 items-center m-auto justify-center">
-                <div class="bg-white h-[75%] w-72 rounded-xl border-2 border-transparent transform hover:scale-110 transition-all hover:border-black group">
+            <div class="flex h-[75%] w-screen bg-slate-200 items-center m-auto justify-center gap-4 transition-all">
+                <div class="bg-white hover:shadow-2xl h-[75%] w-72 rounded-xl border-2 border-transparent transition-transform duration-300 ease-in-out hover:border-black hover:scale-110">
                     <div class="p-4">
-                        <img src="src/images/project/image.png" class="rounded-2xl border-2 border-white group-hover:border-black" alt="a">
+                        <img src="src/images/project/image.png" class="rounded-2xl border-2 border-white group-hover:border-black transition-all" alt="a">
                     </div>
                     <div class="p-4 flex flex-col gap-6">
                         <div>
-                            <h1 class="font-extrabold">Nama Project</h1>
-                            <p class="font-thin">Descripsi Project</p>
+                            <h1 class="font-extrabold">Website Dashboard Presensi</h1>
+                            <p class="font-thin">Sebuah Web Absesnsi Siswa</p>
                         </div>
                         <div class="group">
-                            <a href="#" class="bg-white text-black border-2 border-black px-7 py-2 rounded-full transform hover:scale-110 inline-flex hover:bg-black hover:text-white transition-all">Try it</a>
+                            <a href="https://github.com/RizkyMaulana310807/project-web-dashboard-bootstrap" target="_blank" class="bg-white text-black border-2 border-black px-7 py-2 rounded-full transform hover:scale-110 inline-flex hover:bg-black hover:text-white transition-all">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white hover:shadow-2xl h-[75%] w-72 rounded-xl border-2 border-transparent transition-transform duration-300 ease-in-out hover:border-black hover:scale-110">
+                    <div class="p-4">
+                        <img src="src/images/project/image.png" class="rounded-2xl border-2 border-white group-hover:border-black transition-all" alt="a">
+                    </div>
+                    <div class="p-4 flex flex-col gap-6">
+                        <div>
+                            <h1 class="font-extrabold">Note App</h1>
+                            <p class="font-thin">Sebuah Web Notepad</p>
+                        </div>
+                        <div class="group">
+                            <a href="https://github.com/RizkyMaulana310807/note-app-bootstrap" target="_blank" class="bg-white text-black border-2 border-black px-7 py-2 rounded-full transform hover:scale-110 inline-flex hover:bg-black hover:text-white transition-all">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white hover:shadow-2xl h-[75%] w-72 rounded-xl border-2 border-transparent transition-transform duration-300 ease-in-out hover:border-black hover:scale-110">
+                    <div class="p-4">
+                        <img src="src/images/project/image.png" class="rounded-2xl border-2 border-white group-hover:border-black transition-all" alt="a">
+                    </div>
+                    <div class="p-4 flex flex-col gap-6">
+                        <div>
+                            <h1 class="font-extrabold">Portofolio</h1>
+                            <p class="font-thin">Sebuah Web Portofolio Pribadi</p>
+                        </div>
+                        <div class="group">
+                            <a href="https://github.com/RizkyMaulana310807/Portofolio-pribadi" target="_blank" class="bg-white text-black border-2 border-black px-7 py-2 rounded-full transform hover:scale-110 inline-flex hover:bg-black hover:text-white transition-all">GitHub</a>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
 
         <div class="bg-black flex flex-col h-screen p-4">
@@ -121,20 +180,28 @@
                 <h1 class="text-white text-4xl font-extrabold text-center">Get In Touch </h1>
             </div>
             <div class="bg-black h-full w-full flex flex-rows">
-                <div class="bg-black w-1/2 flex items-center justify-center">
-                    <div class="flex w-1/2 bg-white rounded-2xl flex-col p-4 gap-4">
+                <div class="bg-black w-1/2 flex flex-col items-center justify-center">
+                    <div class="flex w-[60%] ring-4 ring-transparent hover:ring-white border-4 border-black bg-white rounded-2xl flex-col p-4 gap-4 transition-all">
                         <h1 class="text-black font-bold text-4xl">info</h1>
                         <div class="flex flex-col gap-4">
                             <label><i class="fa-solid fa-envelope"></i> Email: rizkymaulana.bussinese@gmail.com</label>
                             <label><i class="fa-solid fa-phone"></i> Phone: +62-812-8721-7886</label>
                             <label><i class="fa-solid fa-address-book"></i> Address: Padalarang, Bandung Barat</label>
-                            <label>Others: --</label>
                         </div>
                     </div>
+                    <br>
+                    <div class="bg-white w-[60%] rounded-2xl p-6 flex justify-between">
+                        <a title="Github" target="_blank" href="https://github.com/RizkyMaulana310807"><i class="fa-brands fa-2xl fa-github"></i></a>
+                        <a title="Facebook" target="_blank" href="https://web.facebook.com/profile.php?id=100066593173431"><i class="fa-brands fa-2xl fa-facebook hover:text-blue-500 transition-all"></i></a>
+                        <a title="Instagram" target="_blank" href="https://www.instagram.com/rizky_maulana_.31"><i class="fa-brands fa-2xl fa-instagram hover:text-red-400 transition-all"></i></a>
+                        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/rizky-maulana-525bb8287/"><i class="fa-brands fa-2xl fa-linkedin hover:text-blue-500 transition-all"></i></a>
+                        <a title="Whastapp" target="_blank" href="https://wa.me/+6281287217886"><i class="fa-brands fa-2xl fa-whatsapp hover:text-green-500 transition-all"></i></a>
+                    </div>
+                    
                 </div>
                 <div class="bg-black w-1/2 flex items-center justify-center">
                     <div class="bg-white flex flex-col gap-4 h-[65%] w-[85%] p-4 rounded-xl">
-                        <h1 class="text-black text-2xl font-bold" data-aos="fade-up">Contact Me</h1>
+                        <h1 class="text-black text-2xl font-bold flex items-center gap-2" data-aos="fade-up">Contact Me <i id="emailClosed" class="fa-solid transition-all duration-500 ease-in-out fa-envelope"></i> <i id="emailOpened" class="fa-solid transition-all duration-500 ease-in-out fa-envelope-open hidden"></i></h1>
                         <form id="contactForm" class="flex flex-col gap-4 bg-white p-4 rounded-lg" data-aos="fade-up">
                             <div class="flex justify-between">
                                 <div class="relative border-2 border-black w-full rounded-lg">
@@ -159,9 +226,216 @@
                 
 
     </main>
+    <div id="modalContainer"></div>
+
 
     <!-- <script src="./node_modules/aos/dist/aos.js"></script> -->
     <script>
+
+// Fungsi untuk membuat modal baru
+function createSkill() {
+    const modalHTML = `
+<div class="relative z-50" aria-labelledby="modal-title" id="myModal" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8" style="width: 90%; max-width: 800px;">
+                <div class="absolute top-0 right-0 p-2">
+                    <button type="button" id="closeBtn" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Keterampilan</h3>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            <!-- Card untuk setiap bahasa -->
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                                <span class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Front End</span>
+                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">HTML</h4>
+                                <i class="fa-brands fa-html5 text-black text-3xl group-hover:text-white"></i>
+                                <div class="mt-2">
+                                    <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- 4 Bintang -->
+                                </div>
+                            </div>
+
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                              <span class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Front End</span>
+                              <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">JavaScript</h4>
+                              <i class="fa-brands fa-js text-black text-3xl group-hover:text-white"></i>
+                              <div class="mt-2">
+                                  <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                              </div>
+                              <div class="absolute flex items-center justify-center hidden group-hover:block group-hover:bg-white">
+                                <p class="text-[12px] text-center">PhaserJS, ThreeJS, AJAX</p>
+                              </div>
+                          </div>
+
+                          <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                            <span class="absolute top-0 right-0 bg-blue-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Front End</span>
+                            <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">CSS</h4>
+                            <i class="fa-brands fa-css3 text-black text-3xl group-hover:text-white"></i>
+                            <div class="mt-2">
+                                <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                            </div>
+                            <div class="absolute flex items-center justify-center hidden group-hover:block group-hover:bg-white">
+                              <p class="text-[12px] text-center">TailwindCSS, Bootstrap</p>
+                            </div>
+                        </div>
+
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                                <span class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Back End</span>
+                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">Python</h4>
+                                <i class="fa-brands fa-python text-black text-3xl group-hover:text-white"></i>
+                                <div class="mt-2">
+                                    <span class="text-yellow-500">&#9733;&#9733;&#9734;&#9734;&#9734;</span> <!-- 5 Bintang -->
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                                <span class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Mobile</span>
+                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">React Native</h4>
+                                <i class="fa-brands fa-react text-black text-3xl group-hover:text-white"></i>
+                                <div class="mt-2">
+                                    <span class="text-yellow-500">&#9733;&#9733;&#9734;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                                <span class="absolute top-0 right-0 bg-green-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Database</span>
+                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">MySQL</h4>
+                                <i class="fa-solid fa-database text-black text-3xl group-hover:text-white"></i>
+                                <div class="mt-2">
+                                    <span class="text-yellow-500">&#9733;&#9733;&#9734;&#9734;&#9734;</span> <!-- 4 Bintang -->
+                                </div>
+                            </div>
+
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                                <span class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Design</span>
+                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">UI/UX Design</h4>
+                                <i class="fa-solid fa-paintbrush text-black text-3xl group-hover:text-white"></i>
+                                <div class="mt-2">
+                                    <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                                </div>
+                            </div>
+
+                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                              <span class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Back End</span>
+                              <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">Java</h4>
+                              <i class="fa-brands fa-java text-black text-3xl group-hover:text-white"></i>
+                              <div class="mt-2">
+                                  <span class="text-yellow-500">&#9733;&#9733;&#9734;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                              </div>
+                          </div>
+
+
+                        <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                          <span class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Mobile</span>
+                          <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">Dart</h4>
+                          <i class="fa-brands fa-dart-lang text-black text-3xl group-hover:text-white"></i>
+                          <div class="mt-2">
+                              <span class="text-yellow-500">&#9733;&#9734;&#9734;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                          </div>
+                      </div>
+
+                      <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
+                        <span class="absolute top-0 right-0 bg-green-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Back End</span>
+                        <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">PHP</h4>
+                        <i class="fa-brands fa-php text-black text-3xl group-hover:text-white"></i>
+                        <div class="mt-2">
+                            <span class="text-yellow-500">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <!-- 3 Bintang -->
+                        </div>
+                    </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    `;
+
+    // Menambahkan modal ke dalam body
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    // Menangani event untuk tombol close
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        document.getElementById('myModal').remove();
+    });
+
+    // Menangani event untuk tombol simpan
+    document.getElementById('saveBtn').addEventListener('click', function() {
+        alert('Data disimpan!');
+        document.getElementById('myModal').remove();
+    });
+}
+
+
+function createSoftSkill() {
+    const modalHTML = `
+<div class="relative z-50" aria-labelledby="modal-title" id="myModal" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
+
+    <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+            <div class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8" style="width: 90%; max-width: 800px;">
+                <div class="absolute top-0 right-0 p-2">
+                    <button type="button" id="closeBtn" class="text-gray-400 hover:text-gray-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                    <div class="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+                        <h3 class="text-base font-semibold leading-6 text-gray-900" id="modal-title">Soft Skill</h3>
+                        <div class="mt-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            
+                          <h1>No Content Avaliable</h1>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    `;
+
+    // Menambahkan modal ke dalam body
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+    // Menangani event untuk tombol close
+    document.getElementById('closeBtn').addEventListener('click', function() {
+        document.getElementById('myModal').remove();
+    });
+
+    // Menangani event untuk tombol simpan
+    document.getElementById('saveBtn').addEventListener('click', function() {
+        alert('Data disimpan!');
+        document.getElementById('myModal').remove();
+    });
+}
+
+
+// Menggunakan addEventListener untuk tombol yang memunculkan modal
+document.getElementById('showSkill').addEventListener('click', createSkill);
+document.getElementById('showSoftSkill').addEventListener('click', createSoftSkill);
+
+        document.getElementById('emailClosed').addEventListener('mouseover', ()=>{
+            document.getElementById('emailOpened').classList.remove('hidden');
+            document.getElementById('emailClosed').classList.add('hidden');
+        });
+        document.getElementById('emailOpened').addEventListener('mouseout', ()=>{
+            document.getElementById('emailClosed').classList.remove('hidden');
+            document.getElementById('emailOpened').classList.add('hidden');
+        });
+
+
         document.getElementById('contactForm').addEventListener('submit', function (event) {
             event.preventDefault(); // Mencegah pengiriman form tradisional
 

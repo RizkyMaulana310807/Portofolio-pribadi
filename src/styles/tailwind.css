@@ -10,3 +10,12 @@
     color: transparent;
     -webkit-text-stroke: 2px white;
 }
+@layer utilities {
+    .outline-icon {
+      text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Warna outline hitam, ubah sesuai keinginan */
+    }
+  }

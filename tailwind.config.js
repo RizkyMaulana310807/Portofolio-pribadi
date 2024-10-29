@@ -1,9 +1,11 @@
 module.exports = {
   darkMode: 'media',
   content: [
-    "./*.html",  // Mencakup semua file .html di direktori root
-    "./*.js",    // Mencakup semua file .js di direktori root
-    "./*.vue" 
+    './src/**/*.{html,js}',
+    './public/**/*.{html,js}',
+    './index.html',
+    './main.html', 
+    './*.html',
   ],
   theme: {
     extend: {
