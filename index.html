@@ -17,8 +17,10 @@
             color: transparent;
             -webkit-text-stroke: 2px white;
         }
-        body{
+        html{
             scroll-behavior: smooth;
+            scroll-snap-align: start;
+            scroll-snap-type: mandatory;
         }
     </style>
 </head>
@@ -34,8 +36,8 @@
                 </a>
             </div>
             <div class="hidden md:hidden lg:flex gap-x-4 items-center sm:hidden">
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">About</a>
-                <a href="#" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">Contact</a>
+                <a href="#aboutSection" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">About</a>
+                <a href="#contactSection" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 dark:hover:text-indigo-400 hover:underline">Contact</a>
                 <a href="#recent-project" class="text-sm font-semibold border-2 border-white bg-black leading-6 text-white dark:text-gray-200 p-1.5 px-3 rounded-lg hover:underline hover:bg-white hover:text-black hover:border-black transition-all text-center">Project <span aria-hidden="true">&rarr;</span></a>
             </div>
             <div id="buttonMenu" class="flex lg:hidden">
@@ -71,14 +73,14 @@
                 </div>
             </div>
             <div class="text-center flex gap-20 mt-10">
-                <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-black rounded-lg text-black bg-transparent hover:bg-black hover:text-white transition duration-300" data-aos="fade-up">You Need A WEB Dev</a>
+                <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-black rounded-lg text-black bg-transparent hover:bg-black hover:text-white transition duration-300" data-aos="fade-right">You Need A WEB Dev</a>
                 <a href="#" class="text-center inline-flex justify-center items-center" data-aos="fade-down" data-aos-delay="250">What you need?</a>
-                <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-transparent rounded-lg text-white bg-black hover:bg-transparent hover:text-black hover:border-black transition duration-300" data-aos="fade-up">You Need A GAME Dev</a>
+                <a href="#" class="text-sm md:text-base lg:text-2xl py-2 px-4 border-2 border-transparent rounded-lg text-white bg-black hover:bg-transparent hover:text-black hover:border-black transition duration-300" data-aos="fade-left">You Need A GAME Dev</a>
             </div>
             
         </div>
 
-        <div class="flex h-screen bg-white">
+        <div class="flex h-screen bg-white" id="aboutSection">
             <div class="bg-black w-1/2 flex items-center justify-center">
                 <div class="overflow-hidden w-1/2 h-1/2 rounded-lg" data-aos="fade-up" data-aos-delay="150">
                     <img src="src/images/project/profile.jpg" alt="Profile" class="w-full h-full object-cover transition-transform duration-250 ease-in-out hover:scale-110">
@@ -112,9 +114,15 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div class="flex flex-rows gap-10 mt-10">
-                        <button id="showSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">My Skills</button>
-                        <button id="showSoftSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">Soft Skills</button>
+                    <div class="flex flex-col gap-4 mt-10">
+                        <div class="flex gap-4">
+                            <button id="showSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">My Skills</button>
+                            <button id="showSoftSkill" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">Soft Skills</button>
+                        </div>
+                        <div class="flex gap-4">
+                            <button id="" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">Certificate</button>
+                            <button id="" class="transform hover:scale-110 transition-all text-white border-2 border-white rounded-full bg-transparent hover:bg-white hover:text-black px-7 py-2">I Likes ...</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -179,23 +187,23 @@
             <div class="">
                 <h1 class="text-white text-4xl font-extrabold text-center">Get In Touch </h1>
             </div>
-            <div class="bg-black h-full w-full flex flex-rows">
+            <div class="bg-black h-full w-full flex flex-rows" id="contactSection">
                 <div class="bg-black w-1/2 flex flex-col items-center justify-center">
                     <div class="flex w-[60%] ring-4 ring-transparent hover:ring-white border-4 border-black bg-white rounded-2xl flex-col p-4 gap-4 transition-all">
                         <h1 class="text-black font-bold text-4xl">info</h1>
                         <div class="flex flex-col gap-4">
-                            <label><i class="fa-solid fa-envelope"></i> Email: rizkymaulana.bussinese@gmail.com</label>
-                            <label><i class="fa-solid fa-phone"></i> Phone: +62-812-8721-7886</label>
-                            <label><i class="fa-solid fa-address-book"></i> Address: Padalarang, Bandung Barat</label>
+                            <label data-aos="fade-left" data-aos-delay="250"><i class="fa-solid fa-envelope" data-aos="fade-right" data-aos-delay="50"></i> Email: rizkymaulana.bussinese@gmail.com</label>
+                            <label data-aos="fade-left" data-aos-delay="300"><i class="fa-solid fa-phone" data-aos="fade-right" data-aos-delay="150"></i> Phone: +62-812-8721-7886</label>
+                            <label data-aos="fade-left" data-aos-delay="350"><i class="fa-solid fa-address-book" data-aos="fade-right" data-aos-delay="200"></i> Address: Padalarang, Bandung Barat</label>
                         </div>
                     </div>
                     <br>
                     <div class="bg-white w-[60%] rounded-2xl p-6 flex justify-between">
-                        <a title="Github" target="_blank" href="https://github.com/RizkyMaulana310807"><i class="fa-brands fa-2xl fa-github"></i></a>
-                        <a title="Facebook" target="_blank" href="https://web.facebook.com/profile.php?id=100066593173431"><i class="fa-brands fa-2xl fa-facebook hover:text-blue-500 transition-all"></i></a>
-                        <a title="Instagram" target="_blank" href="https://www.instagram.com/rizky_maulana_.31"><i class="fa-brands fa-2xl fa-instagram hover:text-red-400 transition-all"></i></a>
-                        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/rizky-maulana-525bb8287/"><i class="fa-brands fa-2xl fa-linkedin hover:text-blue-500 transition-all"></i></a>
-                        <a title="Whastapp" target="_blank" href="https://wa.me/+6281287217886"><i class="fa-brands fa-2xl fa-whatsapp hover:text-green-500 transition-all"></i></a>
+                        <a title="Github" target="_blank" href="https://github.com/RizkyMaulana310807"><i class="fa-brands fa-2xl fa-github" data-aos="fade-up" data-aos-delay="50"></i></a>
+                        <a title="Facebook" target="_blank" href="https://web.facebook.com/profile.php?id=100066593173431"><i class="fa-brands fa-2xl fa-facebook hover:text-blue-500 transition-all" data-aos="fade-up" data-aos-delay="100"></i></a>
+                        <a title="Instagram" target="_blank" href="https://www.instagram.com/rizky_maulana_.31"><i class="fa-brands fa-2xl fa-instagram hover:text-red-400 transition-all" data-aos="fade-up" data-aos-delay="150"></i></a>
+                        <a title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/rizky-maulana-525bb8287/"><i class="fa-brands fa-2xl fa-linkedin hover:text-blue-500 transition-all" data-aos="fade-up" data-aos-delay="200"></i></a>
+                        <a title="Whastapp" target="_blank" href="https://wa.me/+6281287217886"><i class="fa-brands fa-2xl fa-whatsapp hover:text-green-500 transition-all" data-aos="fade-up" data-aos-delay="250"></i></a>
                     </div>
                     
                 </div>
@@ -223,11 +231,21 @@
                         </form>
                     </div>
                 </div>
+
+
+                
                 
 
     </main>
     <div id="modalContainer"></div>
 
+
+    <footer>
+        <div>
+            &copy; 2024 Rizky Maulana. All Right Reserved.
+        </div>
+    </footer>
+    
 
     <!-- <script src="./node_modules/aos/dist/aos.js"></script> -->
     <script>
@@ -295,14 +313,6 @@ function createSkill() {
                                 </div>
                             </div>
                             
-                            <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
-                                <span class="absolute top-0 right-0 bg-purple-600 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Mobile</span>
-                                <h4 class="text-lg font-semibold text-gray-800 group-hover:text-white">React Native</h4>
-                                <i class="fa-brands fa-react text-black text-3xl group-hover:text-white"></i>
-                                <div class="mt-2">
-                                    <span class="text-yellow-500">&#9733;&#9733;&#9734;&#9734;&#9734;</span> <!-- 3 Bintang -->
-                                </div>
-                            </div>
                             
                             <div class="bg-white border-2 border-black hover:bg-black relative p-4 rounded-lg shadow-md aspect-square max-w-xs flex flex-col justify-center items-center mx-auto transition-all group">
                                 <span class="absolute top-0 right-0 bg-green-500 text-white text-xs font-semibold rounded-bl-lg px-2 py-1 rounded-tr-lg group-hover:text-black group-hover:bg-white transition-all">Database</span>
